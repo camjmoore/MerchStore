@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { sections } from '../../original';
+import SECTIONS_DATA from '../../sections.data.js';
 import MenuItem from '../menu-item/menu-item.components';
 import './directory.styles.scss';
 
@@ -7,7 +7,9 @@ class Directory extends Component {
   constructor() {
     super();
 
-    this.state = {sections}
+    this.state = {
+      sections: SECTIONS_DATA
+    }
   }
 
   render() {
